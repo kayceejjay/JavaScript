@@ -48,4 +48,19 @@ querySelector() & querySelectorAll allows for variation and complexity in identi
 
 JavaScript styling attributes different from CSS. Whereas CSS attribute names may use a hyphen, e.g. font-weight, JavaScript names may use camelCase, e.g. fontWeight. Similarly, the associated values in JavaScript must be inputted as a string.
 
+#Scratch
 URL - https://techhandie-corp.github.io/JavaScript/
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!--
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+-->
