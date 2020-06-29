@@ -27,4 +27,4 @@ onOff();
 
 var focusItem;
 
-const deltaSize = () => { focusItem.classList.toggle("huge")};
+const deltaSize = () => { focusItem.classList.toggle("huge") };
