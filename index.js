@@ -4,9 +4,11 @@ var clickButton = document.getElementsByClassName("btn")[0];
 
 clickButton.style.color = "fuchsia";
 
-document.getElementById("title").innerHTML = "Good Bye";
+var focusItem = document.getElementsByClassName("title")[0];
 
-document.getElementById("title").style.color = "orchid";
+focusItem.innerHTML = "Good Bye";
+
+focusItem.style.color = "orchid";
 
 document.querySelectorAll("li a")[0].style.color = "red";
 
@@ -24,7 +26,5 @@ const onOff = () => {clickButton.classList.toggle("invisible")};
 onOff();
 //Toogle .invisible the other way
 onOff();
-
-var focusItem = document.getElementsByClassName("title");
 
 const deltaSize = () => { focusItem.classList.toggle("huge") };
