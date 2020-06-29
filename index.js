@@ -25,6 +25,6 @@ onOff();
 //Toogle .invisible the other way
 onOff();
 
-var focusItem;
+var focusItem = document.getElementsByClassName("title");
 
 const deltaSize = () => { focusItem.classList.toggle("huge") };
