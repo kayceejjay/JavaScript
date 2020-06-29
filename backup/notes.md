@@ -48,4 +48,4 @@ querySelector() & querySelectorAll allows for variation and complexity in identi
 
 JavaScript styling attributes different from CSS. Whereas CSS attribute names may use a hyphen, e.g. font-weight, JavaScript names may use camelCase, e.g. fontWeight. Similarly, the associated values in JavaScript must be inputted as a string.
 
-URL
+URL - https://techhandie-corp.github.io/JavaScript/
