@@ -28,3 +28,11 @@ onOff();
 onOff();
 
 const deltaSize = () => { focusItem.classList.toggle("huge") };
+
+focusItem.innerHTML = "Preferred Search Engines";
+
+var touchList = document.querySelectorAll("a")[1];
+
+touchList.innerHTML = "Bing";
+
+const deltaLink = () => { touchList.setAttribute("href","https://www.bing.com") };
