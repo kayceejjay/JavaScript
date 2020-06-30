@@ -37,9 +37,12 @@ touchList1.innerHTML = "Bing";
 
 const deltaLink1 = () => { touchList1.setAttribute("href","https://www.bing.com") };
 
+deltaLink1();
 
 var touchList2 = document.querySelectorAll("a")[2];
 
 touchList2.innerHTML = "Yahoo";
 
 const deltaLink2 = () => { touchList2.setAttribute("href","https://www.yahoo.com") };
+
+deltaLink2();
