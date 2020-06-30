@@ -31,8 +31,15 @@ const deltaSize = () => { focusItem.classList.toggle("huge") };
 
 focusItem.innerHTML = "Preferred Search Engines";
 
-var touchList = document.querySelectorAll("a")[1];
+var touchList1 = document.querySelectorAll("a")[1];
 
-touchList.innerHTML = "Bing";
+touchList1.innerHTML = "Bing";
 
-const deltaLink = () => { touchList.setAttribute("href","https://www.bing.com") };
+const deltaLink1 = () => { touchList1.setAttribute("href","https://www.bing.com") };
+
+
+var touchList2 = document.querySelectorAll("a")[2];
+
+touchList2.innerHTML = "Yahoo";
+
+const deltaLink2 = () => { touchList2.setAttribute("href","https://www.yahoo.com") };
