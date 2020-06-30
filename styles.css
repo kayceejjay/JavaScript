@@ -1,5 +1,14 @@
+.container {
+  margin: 100px 0 40px 30%;
+}
+
+
 .title {
   color: orchid;
+}
+
+li.item {
+  color: #660066;
 }
 
 .invisible {
