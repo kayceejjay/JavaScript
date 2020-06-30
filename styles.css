@@ -1,8 +1,6 @@
 .container {
   margin: 100px 0 100px 30%;
-  padding: 10px 0 0 0;
 }
-
 
 .title {
   color: orchid;
@@ -10,6 +8,7 @@
 
 li.item {
   color: #660066;
+  padding: 10px 0;
 }
 
 .invisible {
