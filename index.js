@@ -46,3 +46,8 @@ touchList2.innerHTML = "Yahoo";
 const deltaLink2 = () => { touchList2.setAttribute("href","https://www.yahoo.com") };
 
 deltaLink2();
+
+
+/*For Opener Div*/
+//jquery()
+$(h1).css("color","red");//document.querySelector("h1").style.color = "red"
