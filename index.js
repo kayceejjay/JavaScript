@@ -27,7 +27,7 @@ onOff();
 //Toogle .invisible the other way
 onOff();
 
-const deltaSize = () => { focusItem.classList.toggle("huge") };
+const deltaSize = () => { focusItem.classList.toggle("huge-1") };
 
 focusItem.innerHTML = "Preferred Search Engines";
 
@@ -52,5 +52,6 @@ deltaLink2();
 //jquery()
 //Position
 //$("h1").css("color","red") is equivalent to document.querySelector("h1").style.color = "red"
-//Check to see that jquery is loaded and active before executing code
+//Check to see that jquery library has been loaded and is active before executing any code
 $(document).ready( function() { $("h1").css("color","red"); } )
+$("h1").addClass("huge-2");

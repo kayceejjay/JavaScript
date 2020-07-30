@@ -49,7 +49,10 @@ querySelector() & querySelectorAll allows for variation and complexity in identi
 JavaScript styling attributes different from CSS. Whereas CSS attribute names may use a hyphen, e.g. font-weight, JavaScript names may use camelCase, e.g. fontWeight. Similarly, the associated values in JavaScript must be inputted as a string.
 
 #JQuery
-Position of jquery script tag is important. It should precede other javascript code script tags that will need the jquery to execute the code. To mitigate to ensure it is present can use the .ready method which checks to see that jquery is active before executing the code
+Position of jquery script tag is important. It should precede other javascript code script tags that will need the jquery library to execute the code. To mitigate and ensure that the jquery library is present, one can use the .ready method which checks to see that jquery library has been loaded and is active before executing the code. Placing the jquery script tag at the very end of the body section code accomplishes the same thing.
+
+Can use www.minifier.org to compact your javascript code
+
 
 #Scratch
 URL - https://techhandie-corp.github.io/JavaScript/ transferred to https://www.kayceejjay.com/JavaScript
