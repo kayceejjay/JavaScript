@@ -59,3 +59,4 @@ $("h1").text("Hello");
 //$("button").html("<em>Don't Click Me</em>");
 $(".alter").attr("href","https://yahoo.com");
 $(".alter").text("Search");
+$(".alter").css("font-style","oblique");
