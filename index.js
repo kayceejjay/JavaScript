@@ -50,4 +50,4 @@ deltaLink2();
 
 /*For Opener Div*/
 //jquery()
-$(h1).css("color","red");//document.querySelector("h1").style.color = "red"
+$("h1").css("color","red");//document.querySelector("h1").style.color = "red"
