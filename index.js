@@ -56,6 +56,6 @@ deltaLink2();
 $(document).ready( function() { $("h1").css("color","red"); } )
 $("h1").addClass("huge-2");
 $("h1").text("Hello");
-$("button").html("<em>Don't Click Me</em>");
+//$("button").html("<em>Don't Click Me</em>");
 $(".alter").attr("href","https://yahoo.com");
 $(".alter").text("Search");
