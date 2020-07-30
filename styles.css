@@ -28,3 +28,8 @@ li.item {
   color: orangered;
   font-family: "Volkhov";
 }
+
+input {
+  font-style: oblique;
+  color: #d3d3d3;
+}

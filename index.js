@@ -63,3 +63,6 @@ $(".alter").css("font-style","oblique");
 $("button").click(function() {
     $("h1").css("color","orchid")
 });
+$(input).keydown(function(event) {
+  console.log(event.key)
+});
