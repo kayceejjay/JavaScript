@@ -57,5 +57,5 @@ $(document).ready( function() { $("h1").css("color","red"); } )
 $("h1").addClass("huge-2");
 $("h1").text("Hello");
 $("button").html("<em>Don't Click Me</em>");
-$("a.alter").attr("href","https://yahoo.com");
-$("a.alter").text("Search");
+$(".alter").attr("href","https://yahoo.com");
+$(".alter").text("Search");
