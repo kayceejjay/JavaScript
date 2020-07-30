@@ -55,3 +55,5 @@ deltaLink2();
 //Check to see that jquery library has been loaded and is active before executing any code
 $(document).ready( function() { $("h1").css("color","red"); } )
 $("h1").addClass("huge-2");
+$("h1").text("Hello");
+$("button").html("<em>Don't Click Me</em>");
