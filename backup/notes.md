@@ -51,7 +51,7 @@ JavaScript styling attributes different from CSS. Whereas CSS attribute names ma
 #JQuery
 Position of jquery script tag is important. It should precede other javascript code script tags that will need the jquery library to execute the code. To mitigate and ensure that the jquery library is present, one can use the .ready method which checks to see that jquery library has been loaded and is active before executing the code. Placing the jquery script tag at the very end of the body section code accomplishes the same thing.
 
-Can use www.minifier.org to compact your javascript code
+Can use www.minifier.org to compact your javascript code. JQuery uses methods to simplify the javascript code.
 
 
 #Scratch
