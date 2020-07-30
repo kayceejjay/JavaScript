@@ -50,4 +50,7 @@ deltaLink2();
 
 /*For Opener Div*/
 //jquery()
-$("h1").css("color","red");//document.querySelector("h1").style.color = "red"
+//Position
+//$("h1").css("color","red") is equivalent to document.querySelector("h1").style.color = "red"
+//Check to see that jquery is loaded and active before executing code
+$(document).ready( function() { $("h1").css("color","red"); } )
