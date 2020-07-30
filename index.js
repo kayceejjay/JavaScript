@@ -60,3 +60,6 @@ $("h1").text("Hello");
 $(".alter").attr("href","https://yahoo.com");
 $(".alter").text("Search");
 $(".alter").css("font-style","oblique");
+$("h1").click(function() {
+    $("h1").css("color","orchid")
+});
