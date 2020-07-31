@@ -79,7 +79,8 @@ function addFleurDeLis() {
   $("h1").append("&#x269C;");
 }
 
-var newTitle = addFleurDeLis();
+$("h1").before("<h1>We Greet You with</h1>");
 
-$("newTitle").before("<h1>We Greet You with</h1>");
-$("newTitle").after("<p>and your response is</p>");
+addFleurDeLis();
+
+$("h1").after("<p>and your response is</p>");
