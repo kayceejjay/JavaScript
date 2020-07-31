@@ -87,5 +87,5 @@ addFleurDeLis();
 
 //animation
 $("button").on("click",function() {
-  $("h1").slideToggle();
+  $("h1,div.close").slideToggle();
 });
