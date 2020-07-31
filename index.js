@@ -31,7 +31,7 @@ const deltaSize = () => { focusItem.classList.toggle("huge-1") };
 
 focusItem.innerHTML = "Preferred Search Engines";
 
-var touchList1 = document.querySelectorAll("a")[1];
+var touchList1 = document.querySelectorAll(".item-link")[1];
 
 touchList1.innerHTML = "Bing";
 
