@@ -79,7 +79,7 @@ function addFleurDeLis() {
   $("h1.title").append("&#x269C;");
 }
 
-$("h1").addClass("title"));
+$("h1").addClass("title");
 $(".title")before("<h1 class="open">We Greet You with</h1>"
 $(".title").after("<h2 class="close">and your response is</h2>");};
 
