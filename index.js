@@ -61,8 +61,14 @@ $(".alter").attr("href","https://yahoo.com");
 $(".alter").text("Search");
 $(".alter").css("font-style","oblique");
 $("button").click(function() {
-    $("h1").css("color","orchid")
+    $("h1").css("color","orchid");
 });
 $(document).keydown(function(event) {
-  $("h1").text(event.key)
+  $("h1").text(event.key);
+});
+$("h1").on("mouseover",function() {
+  $("h1").css("color","#ffcd48");
+});
+$("h1").on("mouseout",function() {
+  $("h1").css("color","firebrick");
 });
