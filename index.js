@@ -72,7 +72,8 @@ $("h1").on("mouseover",function() {
 $("h1").on("mouseout",function() {
   $("h1").css("color","firebrick");
 });
-$("h1").before("<h1>We Greet You with</h1>");
+//add elements
 $("h1").prepend("&#x269C;");
 $("h1").append("&#x269C;");
+$("h1").before("<h1>We Greet You with</h1>");
 $("h1").after("<p>and your response is</p>");
