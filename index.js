@@ -53,7 +53,7 @@ deltaLink2();
 //Position
 //$("h1").css("color","red") is equivalent to document.querySelector("h1").style.color = "red"
 //Check to see that jquery library has been loaded and is active before executing any code
-$(document).ready( function() { $("h1").css("color","red"); } )
+$(document).ready( function() { $("h1,h2").css("color","red"); } )
 $("h1").addClass("huge-2");
 $("h1").text("Hello");
 //$("button").html("<em>Don't Click Me</em>");
@@ -66,11 +66,11 @@ $("button").click(function() {
 $(document).keydown(function(event) {
   $("h1").text(event.key);
 });
-$("h1").on("mouseover",function() {
-  $("h1").css("color","#ffcd48");
+$("h1,h2").on("mouseover",function() {
+  $("h1,h2").css("color","#ffcd48");
 });
-$("h1").on("mouseout",function() {
-  $("h1").css("color","firebrick");
+$("h1,h2").on("mouseout",function() {
+  $("h1,h2").css("color","firebrick");
 });
 
 //add elements
