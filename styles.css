@@ -47,6 +47,11 @@ input {
   margin: 20px 0;
 }
 
+.close {
+  font-family: "Volkhov";
+  font-style: "oblique";
+}
+
 h2 {
   text-align: left;
 }

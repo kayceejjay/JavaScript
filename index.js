@@ -85,7 +85,7 @@ $("div.bloc").before('<div class="close"><h2>and your response is</h2></div>');
 
 addFleurDeLis();
 
-//animation
+//animation; can chain methods
 $("button").on("click",function() {
   $("h1,div.close").slideToggle();
 });
