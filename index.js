@@ -80,8 +80,8 @@ function addFleurDeLis() {
 }
 
 $("h1").addClass("title");
-$(".title").before('<h1 class="open">We Greet You with</h1>');
-$("div.bloc").before('<div class="close"><h2>and your response is</h2></div>');
+$(".title").before('<h1 class="opening">We Greet You with</h1>');
+$("div.bloc").before('<div class="closing"><h2>and your response is</h2></div>');
 
 addFleurDeLis();
 

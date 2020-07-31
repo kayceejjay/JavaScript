@@ -43,13 +43,13 @@ input {
   justify-content:flex-start;
 }
 
-.open {
+.opening {
   margin: 20px 0;
 }
 
-.close {
+.closing {
   font-family: "Volkhov";
-  font-style: "oblique";
+  font-style: oblique;
 }
 
 h2 {
