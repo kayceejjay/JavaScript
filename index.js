@@ -81,5 +81,5 @@ function addFleurDeLis() {
 
 var newTitle = addFleurDeLis();
 
-$(newTitle).before("<h1>We Greet You with</h1>");
-$(newTitle).after("<p>and your response is</p>");
+$("newTitle").before("<h1>We Greet You with</h1>");
+$("newTitle").after("<p>and your response is</p>");
