@@ -87,5 +87,5 @@ addFleurDeLis();
 
 //animation; can chain methods
 $("button").on("click",function() {
-  $("h1,div.close").slideToggle();
+  $("h1,div.closing").slideToggle();
 });
