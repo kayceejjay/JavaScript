@@ -39,7 +39,7 @@ input {
   color: #d3d3d3;
 }
 
-.open,.close {
+.opening,.closing {
   justify-content:flex-start;
 }
 

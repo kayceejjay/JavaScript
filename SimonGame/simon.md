@@ -15,4 +15,8 @@ Our game logic will be created inside an external Javascript file.
 
 3. Add an alert to game.js and test that the alert gets triggered when you load up index.html in Chrome.
 
-Once, you've confirmed that game.js is correctly linked, you can delete or comment out the alert. 
+Once, you've confirmed that game.js is correctly linked, you can delete or comment out the alert.
+
+4. Add jQuery to your website and test that it's successfully loaded by opening Chrome developer tools and typing $("h1")
+
+If successful, you should get something like this printed:
