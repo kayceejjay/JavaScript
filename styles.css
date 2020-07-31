@@ -2,6 +2,11 @@
   margin: 100px 0 100px 30%;
 }
 
+.container:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   color: orchid;
   margin: 0 0 20px 0;
@@ -32,4 +37,20 @@ li.item {
 input {
   font-style: oblique;
   color: #d3d3d3;
+}
+
+.open,.close {
+  justify-content:flex-start;
+}
+
+.open {
+  margin: 20px 0;
+}
+
+h2 {
+  text-align: left;
+}
+
+.bloc {
+  margin: 25px 0 30px 0;
 }
