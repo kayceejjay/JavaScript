@@ -75,14 +75,12 @@ $("h1").on("mouseout",function() {
 
 //add elements
 function addFleurDeLis() {
-  $("h1").prepend("&#x269C;");
-  $("h1").append("&#x269C;");
+  $("h1.title").prepend("&#x269C;");
+  $("h1.title").append("&#x269C;");
 }
 
-function opening() {$("h1").before("<h1>We Greet You with</h1>");};
+$("h1").addClass("title"));
+$(".title")before("<h1 class="open">We Greet You with</h1>"
+$(".title").after("<h2 class="close">and your response is</h2>");};
 
-function closing(){$("h1").after("<p>and your response is</p>");};
-
-opening();
-closing();
 addFleurDeLis();
