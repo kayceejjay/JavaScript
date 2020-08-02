@@ -1,6 +1,7 @@
 var gamePattern = [];
 var buttonColors = ["red","blue","green","yellow"];
 
+
 function playSound(color) {
   var sounds = ["red.mp3","blue.mp3","green.mp3","yellow.mp3","wrong.mp3"];
   switch (color) {
@@ -31,15 +32,18 @@ function nextSequence() {
   return randomChosenColor;
 };
 
-nextSequence();
+$(document).on("load",function() {
+  var = randomChosenColor;
+  randomChosenColor = nextSequence();
+});
 
 var item = $(`#${randomChosenColor}`);
 
-item.on("click",function() {
-  item.fadeToggle(100).fadeToggle(100).fadeToggle(100).fadeToggle(100);
+$(`#${randomChosenColor}`).on("click",function() {
+  $(`#${randomChosenColor}`).fadeToggle(100).fadeToggle(100).fadeToggle(100).fadeToggle(100);
 });//flash
 
-item.on("click",function() {
+$(`#${randomChosenColor}`).on("click",function() {
    playSound(randomChosenColor);
 });//playSound
 
