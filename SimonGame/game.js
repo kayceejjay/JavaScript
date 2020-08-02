@@ -1,6 +1,6 @@
 var gamePattern = [];
 var buttonColors = ["red","blue","green","yellow"];
-
+var randomChosenColor = nextSequence();
 
 function playSound(color) {
   var sounds = ["red.mp3","blue.mp3","green.mp3","yellow.mp3","wrong.mp3"];
@@ -32,9 +32,13 @@ function nextSequence() {
   return randomChosenColor;
 };
 
+
+/*
 $(document).on("load",function() {
-  var randomChosenColor = nextSequence();
+    randomChosenColor = nextSequence();
 });
+*/
+
 
 var item = $(`#${randomChosenColor}`);
 
