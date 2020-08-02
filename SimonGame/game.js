@@ -33,8 +33,7 @@ function nextSequence() {
 };
 
 $(document).on("load",function() {
-  var = randomChosenColor;
-  randomChosenColor = nextSequence();
+  var = randomChosenColor = nextSequence();
 });
 
 var item = $(`#${randomChosenColor}`);
