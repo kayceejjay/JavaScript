@@ -51,17 +51,27 @@ item.on("click",function() {
    playSound(randomChosenColor);
 });//playSound
 
+
+focusObj.addEventListener("click", function() {var buttonInnerHTML = this.innerHTML; eventMonitor(buttonInnerHTML);
+});
+
+
 /*
+
+function eventTrigger(bindItem,trigger,monitorEvent,TriggerResponse) {
+  var monitor = bindItem.on("monitorEvent",fubction() {
+    bindItem.TriggerRespone(trigger)
+;});
+
 var trigger = randomChosenColor;
 var item = $(`#${randomChosenColor}`);
 
-function ActionTriggered(trigger,item) {
+function TriggerResponse(trigger,item) {
   this.flashSelected = item.on("click",function() {item.fadeToggle(100).fadeToggle(100).fadeToggle(100).fadeToggle(100);});
   this.getSound = item.on("click") playSound(trigger);
 }
 
-function eventTrigger(trigger,actionTriggered) {
-  var action = new ActionTriggered(trigger,item);
+new ActionTriggered(trigger,item);
   action.flashSelected();
   action.getSound();
 
