@@ -34,9 +34,9 @@ function nextSequence() {
   var randomChosenColor = buttonColors[randomNumber];
   gamePattern.push(randomChosenColor);
   playSound(randomChosenColor);
-  return randomChosenColor;
   $("h1").text(`Level ${level}`);
   level++;
+  return randomChosenColor;
 };
 
 
