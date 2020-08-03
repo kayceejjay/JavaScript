@@ -21,7 +21,7 @@ function playSound(color) {
       sound = sound[4];
   }//switch
   var soundToPlay = new Audio(sound);
-  soundToPlay();
+  soundToPlay.play();
 }//playSound
 
 
