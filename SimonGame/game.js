@@ -50,7 +50,7 @@ function animatepress(currentColor) {
 
 
 $(".btn").on("click",function() {
-    var userChosenColor = $(.btn).attr("id");
+    var userChosenColor = $(".btn").attr("id");
     userClickedPattern.push(userChosenColor);
     console.log(userClickedPattern);
     return userClickedPattern;
