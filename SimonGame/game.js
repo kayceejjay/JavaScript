@@ -33,11 +33,10 @@ function nextSequence() {
 };
 
 
-/*
 $(document).on("load",function() {
     randomChosenColor = nextSequence();
 });
-*/
+
 
 
 var item = $(`#${randomChosenColor}`);
