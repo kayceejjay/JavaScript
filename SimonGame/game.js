@@ -3,7 +3,7 @@ var buttonColors = ["red","blue","green","yellow"];
 var randomChosenColor = nextSequence();
 
 function playSound(color) {
-  var sounds = ["SimonGame/sounds/red.mp3","SimonGame/sounds/blue.mp3","SimonGame/sounds/green.mp3","SimonGame/sounds/yellow.mp3","SimonGame/sounds/wrong.mp3"];
+  var sounds = ["sounds/red.mp3","sounds/blue.mp3","sounds/green.mp3","sounds/yellow.mp3","sounds/wrong.mp3"];
   switch (color) {
     case "red":
       sound = sounds[0];
