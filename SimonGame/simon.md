@@ -182,3 +182,51 @@ Hint 1. You'll need a variable called started to toggle to true once the game st
 Hint 3. The h1 has a unique id of level-title which you can target with jQuery.
 
 Hint 5.  You'll need to use jQuery again to change the h1 by targeting the id: level-title.
+
+
+
+##Step 8 - Check the User's Answer Against the Game Sequence8
+
+At this point, it might be worth reviewing how the Simon game works.
+
+Firstly, the game shows the first colour in the sequence (blue). The user clicks on the blue button.
+
+Next, the game shows the next colour (red), the user has to remember the sequence is blue, red and so on and so forth.
+
+If the user messes up the sequence, then the game ends.
+
+You can either try to figure out how to achieve this logic by trying to write the code yourself or you can follow the challenge steps below:
+
+1. Create a new function called checkAnswer(), it should take one input with the name currentLevel
+
+2. Call checkAnswer() after a user has clicked and chosen their answer, passing in the index of the last answer in the user's sequence.
+
+e.g. If the user has pressed red, green, red, yellow, the index of the last answer is 3.
+
+3. Write an if statement inside checkAnswer() to check if the most recent user answer is the same as the game pattern. If so then log "success", otherwise log "wrong".
+
+You can now use these log statements along with logging the values of userClickedPattern and gamePattern in the Chrome Developer Tools console to check whether if your code is performing as you would expect and debug your code as needed. Once you're done, feel free to remove these log statements.
+
+4. If the user got the most recent answer right in step 3, then check that they have finished their sequence with another if statement.
+
+5. Call nextSequence() after a 1000 millisecond delay.
+
+6. Once nextSequence() is triggered, reset the userClickedPattern to an empty array ready for the next level.
+
+
+Now you should be able to play the game.
+
+
+In the next few challenges, we'll address what happens when the user get's the pattern wrong and how to restart the game.
+
+
+
+##Step 9 - Game Over
+
+1. In the sounds folder, there is a sound called wrong.mp3, play this sound if the user got one of the answers wrong.
+
+2. In the styles.css file, there is a class called "game-over", apply this class to the body of the website when the user gets one of the answers wrong and then remove it after 200 milliseconds.
+
+All going well, you should end up with this flash effect:
+
+3. Change the h1 title to say "Game Over, Press Any Key to Restart" if the user got the answer wrong.
