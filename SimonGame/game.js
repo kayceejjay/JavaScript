@@ -36,7 +36,7 @@ function keyPressed() {
 //Play sound
 function playSound(colorName) {
   var sound;
-  var sounds = ["https://assets.codepen.io/2736276/tom-1.mp3","https://assets.codepen.io/2736276/tom-2.mp3","https://assets.codepen.io/2736276/tom-3.mp3","https://assets.codepen.io/2736276/tom-4.mp3","https://assets.codepen.io/2736276/crash.mp3"];
+  var sounds = ["sounds/red.mp3","sounds/blue.mp3","sounds/green.mp3","sounds/yellow.mp3","sounds/wrong.mp3"];
 
   switch (colorName) {
     case "red":
