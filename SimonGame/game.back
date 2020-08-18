@@ -1,44 +1,29 @@
-/*Global*/
-
 var keyCount = 0;
 var level = 0;
 var userClickedPattern = [];
 var gamePattern = [];
 var buttonColors = ["red","blue","green","yellow"];
+//var randomChosenColor = nextSequence();
 
 
 /*Utility Functions*/
 
 //Capture keypresses
 function keyPressed() {
-  var start = false;
-  var returnObj = {};
-  var numPressed = 0;
-
+  var userChosenColor;
   //Get the id of button pressed
-  $(document).on("keydown",function(event) {
-    if (keyCount === 0) {
-      start = true;
-      return start;
-    } else {
-        var currLevel = level;
-        var pressed = event.key;
-    }//ifelse
-      keyCount++;
-      numPressed = keyCount;
-      returnObj = { start, currLevel, pressed, numPressed };
+  $(".btn").on("keydown",function(event) {
+      //userChosenColor = $(".btn").attr("id");
+      //userClickPattern.push(userChosenColor);
+      return true;
   });
-
-    return returnObj;
   //keyCount++;
 }//pressButton
 
 //Play sound
 function playSound(colorName) {
-  var sound;
-  var sounds = ["https://assets.codepen.io/2736276/tom-1.mp3","https://assets.codepen.io/2736276/tom-2.mp3","https://assets.codepen.io/2736276/tom-3.mp3","https://assets.codepen.io/2736276/tom-4.mp3","https://assets.codepen.io/2736276/crash.mp3"];
-
-  switch (colorName) {
+  var sounds = ["sounds/red.mp3","sounds/blue.mp3","sounds/green.mp3","sounds/yellow.mp3","sounds/wrong.mp3"];
+  switch (color) {
     case "red":
       sound = sounds[0];
       break;
@@ -52,10 +37,8 @@ function playSound(colorName) {
       sound = sounds[3];
       break;
     default:
-      sound = sounds[4];
+      sound = sound[4];
   }//switch
-
-  console.log(sound);
   var soundToPlay = new Audio(sound);
   soundToPlay.play();
 }//playSound
@@ -63,20 +46,17 @@ function playSound(colorName) {
 //Flash button
 function flashButton(colorName) {
   //Listen for click & flash button clicked
-  $(`#${colorName}`).on("click",function() {
-    $(`#${colorName}`).fadeToggle(100).fadeToggle(100).fadeToggle(100).fadeToggle(100);
+  $(`#${color}`).on("click",function() {
+    $(`#${color}`).fadeToggle(100).fadeToggle(100).fadeToggle(100).fadeToggle(100);
   });
 }//flashButton
 
-//Animate clicked button
-function animatePress(currentColor) {
+function animatepress(currentColor) {
   $(".btn").on("click",function() {
-    console.log(this);
     $(".btn").add("class","pressed");
     setTimeout(function() { $(".btn").remove("class","pressed"); },100);
   });
 }
-
 
 function nextSequence() {
   //Generate color index as reference
@@ -87,22 +67,13 @@ function nextSequence() {
   gamePattern.push(randomChosenColor);
   //Flash the associated button for referenced color
   flashButton(randomChosenColor);
-  //Play the associated sound for referenced color
+  //PLay the associated sound for referenced color
   playSound(randomChosenColor);
   //Give Level in Title
-  $("h1#level-title").text(`Level ${level}`);
+  $("h1").text(`Level ${level}`);
   level++;
-  console.log(gamePattern);
-  return { level, gamePattern };
-}//nextSequence
-
-
-function checkAnswers(currentLevel) {
-  if (userClickedPattern === gamePattern) {
-    setTimeout(function() { nextSequence(); },100); userClickedPattern = [];
-  } else { gameOver(); }
-}//checkAnswers
-
+  return level;
+};
 
 function gameOver() {
   //play wrong.mp3
@@ -111,10 +82,8 @@ function gameOver() {
   $("body").add("class","game-over");
   //remove game over
   setTimeout(function() { $("body").remove("class","game-over"); },200);
-  level = 0;
-  keyCount = 0;
-  return { level, keyCount };
 }//gameOver
+
 
 //Capture users responses
 function userResponses() {
@@ -126,32 +95,32 @@ function userResponses() {
       //compose user pattern
       userClickedPattern.push(userChosenColor);
       console.log(userClickedPattern);
-      return { color: userChosenColor, pattern: userClickedPattern };
+      return userClickedPattern;
   });//capturedClicks
 }//userResponses
 
 
+
+
 function playSimon() {
 
-  var gameOn = keyPressed();
-  var compuSeq;
-  var userSeq;
-
-  if ( gameOn != false ) {
-    compuSeq = nextSequence();
-    var whatLevel = compuSeq.level;
+  if ( keyCount === 0 ) {
+    nextSequence();
   };
-  userSeq = userResponses();
-  checkAnswers(whatLevel);
-  console.log(gameOn);
 
-}//playSimon
+}
 
 
-playSimon();
 
-/*
-var gameStat = keyPressed();
-var stat = gameStat.level;
-console.log(stat);
-*/
+var item = $(`#${randomChosenColor}`);
+
+//flash button when user clicks
+
+
+//play sound when user clicks
+$(`#${randomChosenColor}`).on("click",function() {
+   playSound(randomChosenColor);
+});//playSound
+
+
+//$(document).on("keydown",function(event) { console.log(event.key); $("h1").text("HexaCode Color"); });
