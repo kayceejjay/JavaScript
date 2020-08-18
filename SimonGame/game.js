@@ -137,7 +137,7 @@ function playSimon() {
   var compuSeq;
   var userSeq;
   /*gameOn != false*/
-  if ( kayCount === 0 ) {
+  if ( keyCount === 0 ) {
     compuSeq = nextSequence();
     var whatLevel = compuSeq.level;
   };
