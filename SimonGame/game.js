@@ -136,8 +136,8 @@ function playSimon() {
   var gameOn = keyPressed();
   var compuSeq;
   var userSeq;
-
-  if ( gameOn != false ) {
+  /*gameOn != false*/
+  if ( kayCount === 0 ) {
     compuSeq = nextSequence();
     var whatLevel = compuSeq.level;
   };
